@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Desktop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Desktop Background -->
+  <div class="desktop">
+    <!-- Left-side icons -->
+    <div class="desktop-icons">
+      <div class="icon">
+        <img src="icons/documents.png" alt="Documents">
+        <p>Documents</p>
+      </div>
+      <div class="icon">
+        <img src="icons/projects.png" alt="Projects">
+        <p>Projects</p>
+      </div>
+      <div class="icon">
+        <img src="icons/pictures.png" alt="Pictures">
+        <p>Pictures</p>
+      </div>
+      <div class="icon">
+        <img src="icons/link.png" alt="Links">
+        <p>Links</p>
+      </div>
+      <div class="icon">
+        <img src="icons/about.png" alt="About">
+        <p>About</p>
+      </div>
+      <div class="icon">
+        <img src="icons/help.png" alt="Help">
+        <p>Help</p>
+      </div>
+    </div>
+
+    <!-- Central time and date display -->
+    <div class="time-display">
+      <h1 id="day"></h1>
+      <h2 id="time"></h2>
+    </div>
+  </div>
+
+  <!-- Taskbar -->
+  <div class="taskbar d-flex bg-dark align-items-center justify-content-center">
+    <!-- Centered Icons -->
+    <div class="taskbar-center justify-content-center">
+      <img src="icons/start.png" alt="Start" class="taskbar-icon" onclick="toggleStartMenu()">
+      <img src="icons/file explorer.png" alt="File Explorer" class="taskbar-icon">
+      <a href="https://github.com/Na-chidor" target="_blank" rel="noopener noreferrer">
+        <img src="icons/github.png" alt="GitHub" class="taskbar-icon">
+      </a>
+      <img src="icons/weather.png" alt="Weather" class="taskbar-icon">
+    </div>
+
+    <!-- Right-side Icons -->
+    <div class="taskbar-right">
+      <span id="language">EN</span>
+      <div id="datetime">
+        <span id="clock"></span>
+        <span id="date"></span>
+      </div>
+      <img src="icons/chat.png" alt="Chat" class="taskbar-icon" onclick="openChatbot()">
+    </div>
+  </div>
+
+  <!-- Start Menu -->
+  <div id="start-menu" class="start-menu">
+    <div class="skills-section">
+      <h3>Skills</h3>
+      <div class="skills-icons">
+        <div class="skill-icon">
+          <img src="icons/skills/html-5.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/css-3.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/js.png" alt="JavaScript">
+          <p>Java script</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/react.png" alt="React">
+          <p>React</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/angular.png" alt="Angular">
+          <p>Angular 5</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/nodejs.png" alt="Node">
+          <p>Node</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/mongodb.png" alt="MongoDB">
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/typescript.png" alt="Typescript">
+          <p>Type script</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/java.png" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/dart.png" alt="Dart">
+          <p>Dart</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/flutter.svg" alt="Flutter">
+          <p>Flutter</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/postman.png" alt="postman">
+          <p>postman</p>
+        </div>
+        <div class="skill-icon">
+          <img src="icons/skills/github.png" alt="Git">
+          <p>Git</p>
+        </div>
+        <!-- Add more skill icons here -->
+      </div>
+    </div>
+    <div class="about-section">
+      <h3>About Me</h3>
+      <h5>Hello World</h5>
+      <p> My name is Nahom Biniyam Solomon. I am an electrical and computer engineering graduate. I am passionate developer of full stack developement. My expertise lie on MERN STACK and Flutter. I have also worked with frameworks like Angular in the past and my set of programming skills include Javascript, Typescript, Python, Java, Dart and etc.</p>
+    </div>
+    <div class="start-menu-footer">
+      <div class="profile-info">
+        <img src="icons/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <span>Nahom Biniyam Solomon</span>
+      </div>
+      <img src="icons/reload.png" alt="Reload" class="reload-icon" onclick="location.reload()">
+    </div>
+  </div>
+
+  <!-- Chatbot Modal -->
+  <div id="chatbot-modal" class="chatbot-modal">
+    <div class="chatbot-content">
+      <span class="close" onclick="closeChatbot()">&times;</span>
+      <h3>Ask a Question</h3>
+      <textarea id="user-message" placeholder="Type your question..."></textarea>
+      <button onclick="sendEmail()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

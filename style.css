@@ -1,0 +1,202 @@
+/* Desktop Background */
+body, .desktop {
+    background: url('icons/windows11theme.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Desktop Icons */
+  .desktop-icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    height: 10px;
+    flex-direction: column;
+  }
+  
+  .icon {
+    text-align: center;
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Central Time and Date Display */
+  .time-display {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .time-display h1 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  
+  .time-display h2 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+  
+  /* Taskbar */
+  .taskbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .taskbar-center {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .taskbar-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .taskbar-right {
+    position: absolute;
+    right:10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Chatbot Modal */
+  .chatbot-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .chatbot-content {
+    background-color: #fff;
+    color: black;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  #datetime {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+#date, #clock{
+    display:block;
+}
+/* Start Menu */
+.start-menu {
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 50px;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.skills-section, .about-section {
+  margin-bottom: 20px;
+}
+
+.skills-section h3, .about-section h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* Center align icons */
+}
+
+.skill-icon {
+  text-align: center;
+  width: 60px; /* Increase width to accommodate longer skill names */
+  cursor: pointer;
+}
+
+.skill-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.about-section p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.start-menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #333; /* Separate background for footer */
+  border-radius: 0 0 8px 8px; /* Round bottom corners of footer */
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reload-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
